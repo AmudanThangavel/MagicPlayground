@@ -1,0 +1,60 @@
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<link rel="stylesheet" href={% static 'game/css/slides.css' %}>
+
+<!-- Slideshow container -->
+<div class="slideshow-container" style="display: block;">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <h2 id="heading_of_logical_opr">ISSUING COMMANDS
+    </h2>
+    <p id="text_under_heading">
+      To perform a task successfully one must follow some set of instructions
+      But some slightest of mistakes can cause error<br>
+    <div style:"text-align:left; padding-left:20%">
+      <br>Starting with writing commands to move character to perform specific task
+    </div>
+    </p>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">ISSUING COMMANDS</h2>
+      <p id="text_under_heading">
+      <div style="text-align:center; padding-right:7%;">
+        <br>
+        <ul>
+          <ul>To move your character forward use <b>move_up()</b></ul><br>
+          <ul>To move your character backward use <b>move_down()</b></ul><br>
+          <ul>To move your character right use <b>move_right()</b></ul><br>
+          <ul>To move your character left use <b>move_left()</b></ul>
+        </ul>
+      </div>
+      </p>
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)">
+
+  </span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+<script src={% static 'game/js/slides.js' %} async defer></script>
+
+{% endblock %}

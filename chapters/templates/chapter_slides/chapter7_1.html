@@ -1,0 +1,85 @@
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<link rel="stylesheet" href={% static 'game/css/slides.css' %}>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <h2 id="heading_of_logical_opr">PARAMETERS
+    </h2>
+    <p id="spacing">Sometimes functions require input to provide data for their code.<br> This input is defined using
+      parameters.<br>
+      Parameters are variables that are defined in the function definition.<br> They are assigned the values which were
+      passed as arguments when the function was called, elsewhere in the code.
+    </p>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">PARAMETERS</h2>
+      <p id="spacing" style="text-align:left; padding-left:25%"><b>Example:</b><br>
+        # Define a function my_function() with parameter x<br>
+        def my_function(<b>x</b>):<br>
+        &nbsp &nbsp &nbsp &nbsp return x + 1<br>
+        # Invoke the function<br>
+        print(my_function(2)) <b># Output: 3</b><br>
+        print(my_function(3 + 5)) <b> # Output: 9</b><br>
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="slide slide_3">
+      <div class="slide-content">
+        <h2 style="padding:10% 10% 3% 10%">Multiple Parameters</h2>
+        <p id="spacing">Python functions can have multiple parameters.<br>
+          To define a function with multiple parameters, parameter names are placed one after another, separated by
+          commas, within the parentheses of the function definition.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Multiple Parameters</h2>
+      <p id="spacing" style="text-align:left; padding-left:25%;"><b>Example:</b><br>
+        <i># multiple arguments are passed<br>
+          # function definition<br></i>
+        def Message(argument1, argument2):<br>
+        &nbsp &nbsp &nbsp &nbsp print(argument1+" "+argument2+")<br>
+        <i> # function call<br></i>
+        Message("Python", "Combat")<br>
+        <b>output : </b><br>
+        Python Combat<br>
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)">
+
+  </span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script src="logical_opr.js" async defer></script>
+
+
+<script src={% static 'game/js/slides.js' %} async defer></script>
+
+{% endblock %}

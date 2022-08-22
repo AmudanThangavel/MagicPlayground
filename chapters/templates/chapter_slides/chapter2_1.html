@@ -1,0 +1,84 @@
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<link rel="stylesheet" href={% static 'game/css/slides.css' %}>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <h2 id="heading_of_logical_opr">For Loop:
+    </h2>
+    <p id="text_under_heading">
+      For loops are useful when you want to execute the same code for each item in a given sequence.<br><br> With a for
+      loop, you can iterate over any iterable data such as lists, sets, tuples, dictionaries, ranges, and even
+      strings.<br>
+    </p>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Syntax</h2>
+      <p id="text_under_heading">
+
+      <div style:"text-align:left; padding-left:20%">
+        <i>for val in sequence:<br>
+          &nbsp &nbsp &nbsp &nbsp &nbspcode in loop<br><br></i>
+        Here,val is the variable that takes the value of the item inside the sequence on each iteration.<br><br>
+        sequence:list, tuple, string or other iterable objects. <br>
+      </div>
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="slide slide_3">
+      <div class="slide-content">
+        <h2 style="padding:10% 10% 3% 10%">FOR LOOPS- sample code:</h2>
+        <p id="spacing">
+          <b style="text-align:left;"></b><br>
+        <div style="text-align:left; padding-left:25%"> <b> Example:</b><br>
+          chocolates = ["Fabelle","Toblerone","Snickers"]<br>
+          for i in chocolates:<br>
+          &nbsp &nbsp &nbsp &nbsp print(i)<br>
+          <b>Output:</b><br>
+          Fabelle<br>
+          Toblerone<br>
+          Snickers<br>
+        </div>
+
+
+        </p>
+
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)">
+
+  </span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+
+
+<script src={% static 'game/js/slides.js' %} async defer></script>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Python Combat Chapters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-KwxQKNj2D0XKEW5O/Y6haRH39PE/xry8SAoLbpbCMraqlX7kUP6KHOnrlrtvuJLR" crossorigin="anonymous">
+  <link rel="stylesheet" href={% static 'chapters_homepage/style.css' %}>
+
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Chapters</h1>
+  </div>
+  <div class="container">
+    <div class="nav"><a href={% url 'home' %}><i class="fal fa-home"></i></a></div>
+    <div class="list">
+      {% for chapters in chapters_list %}
+      {% if chapters.chapter_intro %}
+      <div class="num">
+        <a href="/chapters/chapter{{ chapters.chapter_id }}/">
+          <h3>chapter {{ chapters.chapter_no }} - {{ chapters.chapter_name }}</h3>
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <h5 class="message">e-Yantra, IIT Bombay</h5>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</body>
+
+</html>

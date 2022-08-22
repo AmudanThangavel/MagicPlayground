@@ -1,0 +1,130 @@
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<link rel="stylesheet" href={% static 'game/css/slides.css' %}>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <h2 id="heading_of_logical_opr">LOGICAL OPERATORS:
+    </h2>
+    <p id="text_under_heading">
+      Operators are used to perform operations on values and variables.<br> These are the special symbols that carry out
+      arithmetic and logical computations.<br>The value the operator operates on is known as Operand.<br>
+    </p>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Logical NOT Operator:</h2>
+      <p id="text_under_heading">
+        It returns true if operand is false<br>
+      <div style:"text-align:left; padding-left:20%"><b>Syntax:</b><br>
+        not x<br></div>
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="slide slide_3">
+      <div class="slide-content">
+        <h2 style="padding:10% 10% 3% 10%">Logical NOT Operator</h2>
+        <p id="spacing">
+        <div style="text-align:left; padding-left:45%"><b>sample code:</b><br></div>
+        <div style="text-align:left; padding-left:45%">&nbsp &nbsp x = True<br>
+          &nbsp &nbsp c=not x<br>
+          &nbsp &nbsp print('not x is',c)<br></div>
+        <div style="text-align:left; padding-left:45%"><b>Output:<br></b></div>
+        not x is False<br>
+
+        </p>
+
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Logical OR Operator:</h2>
+      <p id="text_under_heading">
+        It returns true one of the operands is true <br>
+      <div style:"text-align:left; padding-left:20%"><b>Syntax:</b><br>
+        x or y<br></div>
+      </p>
+      </p>
+    </div>
+  </div>
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Logical OR Operator:</h2>
+      <p id="spacing">
+        <b style="text-align:left; padding-left:20%">sample code:</b><br>
+      <div style="text-align:left; padding-left:45%">&nbsp &nbsp x = True<br>
+        &nbsp &nbsp y = False<br>
+        &nbsp &nbsp b=x or y<br>
+        &nbsp &nbsp print('x or y is',b)<br></div>
+      <div style="text-align:left; padding-left:45% "><b>Output:<br></b></div>
+      x or y is True<br>
+
+      </p>
+      </p>
+    </div>
+  </div>
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Logical AND Operator:</h2>
+      <p id="text_under_heading">
+        It returns true if both the operands are true <br>
+      <div style:"text-align:left; padding-left:20%"><b>Syntax:</b><br>
+        x and y<br></div>
+      </p>
+      </p>
+    </div>
+  </div>
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Logical AND Operator:</h2>
+      <p id="spacing">
+        <b>sample code:</b><br>
+      <div style="text-align:left; padding-left:45%"> &nbsp x = True<br>
+        &nbsp y = False<br>
+        &nbsp a=x or y<br>
+        &nbsp print('x and y is',a)<br></div>
+      <div style="text-align:left; padding-left:45% "><b>Output:<br></b></div>
+      x and y is False<br>
+
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)">
+
+  </span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+
+</div>
+
+<script src={% static 'game/js/slides.js' %} async defer></script>
+
+{% endblock %}

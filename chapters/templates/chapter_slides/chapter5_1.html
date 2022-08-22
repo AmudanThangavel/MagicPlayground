@@ -1,0 +1,91 @@
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<link rel="stylesheet" href={% static 'game/css/slides.css' %}>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <h2 id="heading_of_logical_opr">VARIABLES
+    </h2>
+    <p id="spacing">Variable is a name that is used to refer to memory location. <br>Python variable is also known as
+      an identifier and used to hold value.
+      Variable names can be a group of both the letters and digits, but they have to begin with a letter or an
+      underscore.
+      It is recommended to use lowercase letters for the variable name.<br>
+      <i>Variable names are case-sensitive</i>.<br>eyantra and Eyantra both are two different variables.<br>
+    </p>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">VARIABLES</h2>
+      <p id="spacing"><b>Example:</b><br>
+      <div style="text-align:left; padding-left:25%"> # declaring the variable<br>
+        Number = 9<br>
+
+        # display<br>
+        print("Number is :", Number)<br>
+      </div>
+      <br>
+      <b>
+        Output</b><br>
+      Number is : 9<br>
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="slide slide_3">
+      <div class="slide-content">
+        <h2 style="padding:10% 10% 3% 10%">Incrementing and Decrementing Variables</h2>
+        <p id="spacing">In python, if you want to increment a variable we can use “+=” or we can simply reassign it
+          “x=x+1” to increment a variable value by 1.<br>
+          In python, if you want to decrement a variable we can use “-=” or we can simply reassign it “x=x-1” to
+          decrement a variable value by 1.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">Incrementing and Decrementing Variables</h2>
+      <div style="text-align:left; padding-left:25%;">
+        <p id="spacing"><b>Example:</b><br>
+          x = 5<br>
+          y = 8<br>
+          x += 1<br>
+          y -= 1<br>
+          print(x)<br>
+          print(y)<br>
+      </div>
+      <b> Output:</b><br>
+      6<br>
+      7<br>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+<script src={% static 'game/js/slides.js' %} async defer></script>
+
+{% endblock %}

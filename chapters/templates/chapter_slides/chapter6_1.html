@@ -1,0 +1,86 @@
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<link rel="stylesheet" href={% static 'game/css/slides.css' %}>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <h2 id="heading_of_logical_opr">FUNCTIONS
+    </h2>
+    <p id="spacing">Function is a block of organized, reusable code that is used to perform a single, related
+      action.functions facilitate code reusability.
+    </p>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">FUNCTIONS</h2>
+      <p id="spacing" style="text-align:left; padding-left:25%"><b>syntax:</b><br>def function_name(parameters):<br>
+        &nbsp &nbsp &nbsp &nbsp # What the function does goes here<br>
+        &nbsp &nbsp &nbsp &nbsp return result<br>
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="slide slide_3">
+      <div class="slide-content">
+        <h2>FUNCTIONS</h2>
+        <p id="spacing">Have you ever clicked a picture<br>
+          The process goes like:<br>
+        <div style="text-align:left; padding-left:25%;">
+          <li>Grab your camera</li>
+          <li>Focus</li>
+          <li>Click
+          </li>
+        </div>
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">FUNCTIONS</h2>
+
+      <p id="spacing" style="text-align:left; padding-left:25%;">def takeapic():<br>
+        &nbsp &nbsp &nbsp &nbsp Grab<br>
+        &nbsp &nbsp &nbsp &nbsp Focus<br>
+        &nbsp &nbsp &nbsp &nbsp click<br>
+        <br>
+
+        Use <b>def</b> to define a function <br>
+        Give it a name ( here - <b>takeapic</b>)<br>
+        Add commands with indentation(4 empty spaces) <br>
+        Call a function to execute the particular <br>
+        <b>Syntax</b>:<br> function_name()<br>
+        <b>Here:</b><br> takeapic()<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)">
+
+  </span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+<script src={% static 'game/js/slides.js' %} async defer></script>
+
+{% endblock %}

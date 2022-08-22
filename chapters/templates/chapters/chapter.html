@@ -1,0 +1,35 @@
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<div id="chapterdiv" style="margin: 10px; padding: 20px; ">
+    <link rel="stylesheet" href={% static 'game/css/style.css' %}>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython_stdlib.js"></script>
+    <p id="chapID" style="display: none;">{{ chapter_details.chapter_id }}</p>
+    <p id="user" style="display: none;">{{ user.id }}</p>
+    <div class="text" style="clear: both; font-size: 15px !important;">
+        <h4 style="float: left">Tries :<h4 style="float: right" id="tries"></h4></h4>        
+    </div>
+    <div class="play">
+        <div class="row">
+            <canvas id="canvasTop" width="500" height="500" style="border:solid;border-color:black"></canvas>
+            <canvas id="canvasBottom" width="500" height="500" style="border:solid;border-color:black"></canvas>
+        </div>
+
+        <div class="column">
+            <div id="editor"># Write your code here</div>
+        </div>
+
+        <button type="button" id="run">RUN</button>
+    </div>
+    <script id="editor" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.6.0/ace.js"></script>
+    <script src={% static 'game/js/action.js' %}></script>
+    <script src={% static 'game/js/myapi.js' %}></script>
+     <script src={{ js_url }}></script>
+    <script type="text/python" src={% static 'game/js/mybrython.py' %}></script>
+
+
+    {% endblock %}

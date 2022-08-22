@@ -1,0 +1,190 @@
+    /* Slideshow container */
+    
+    @media only screen and (min-width: 601px) {
+        .slideshow-container {
+            position: relative;
+            /* background-image: linear-gradient( #17ffc6, #03448c); */
+            /* background: linear-gradient(45deg, #61cfe5 10%, #2a99b0 40%, #2a99b0 40%, #2a99b0 60%, #2a99b0 60%, #2a99b0 65%, #2a99b0 65%, #61cfe5 90%); */
+            background: rgb(53, 48, 140);
+            background: linear-gradient(90deg, rgba(53, 48, 140, 1) 0%, rgba(178, 255, 181, 1) 0%, rgba(133, 234, 255, 1) 100%);
+            /* height: 75%; */
+            min-height: 70%;
+            min-width: 70%;
+            max-width: 90%;
+            max-height: 90%;
+            width: 90%;
+            margin: 2% 2% 2% 9%;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding-bottom: 5%;
+            /* font-size: 2vw; */
+        }
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 7%;
+            text-align: center;
+        }
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+        /* Add a blue color to the author */
+        .author {
+            color: cornflowerblue;
+        }
+        #spacing {
+            content: fit;
+        }
+        .mySlides {
+            padding-top: 10px;
+        }
+        #heading_of_logical_opr {
+            text-shadow: #717171;
+            padding: 10% 10% 0% 10%;
+        }
+        #text_under_heading {
+            margin-top: 3%;
+        }
+    }
+    /* Slideshow container */
+    
+    @media only screen and (min-width: 0px) and (max-width: 600px) {
+        .slideshow-container {
+            position: relative;
+            /* background-image: linear-gradient( #17ffc6, #03448c); */
+            /* background: linear-gradient(45deg, #61cfe5 10%, #2a99b0 40%, #2a99b0 40%, #2a99b0 60%, #2a99b0 60%, #2a99b0 65%, #2a99b0 65%, #61cfe5 90%); */
+            background: rgb(53, 48, 140);
+            background: linear-gradient(90deg, rgba(53, 48, 140, 1) 0%, rgba(178, 255, 181, 1) 0%, rgba(133, 234, 255, 1) 100%);
+            width: 90%;
+            margin: 2% 2% 2% 9%;
+            border: 2px solid black;
+            border-radius: 20px;
+            /* font-size: 2vw; */
+        }
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+        /* Add a blue color to the author */
+        .author {
+            color: cornflowerblue;
+        }
+        #spacing {
+            content: fit;
+        }
+        .mySlides {
+            padding-top: 10px;
+        }
+        #heading_of_logical_opr {
+            text-shadow: #717171;
+            padding: 10% 10% 0% 10%;
+        }
+        #text_under_heading {
+            margin-top: 3%;
+        }
+    }

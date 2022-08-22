@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% extends 'chapters/index.html' %}
+
+{% load static %}
+
+{% block navbar %}
+
+<link rel="stylesheet" href={% static 'game/css/slides.css' %}>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <h2 id="heading_of_logical_opr">CONDITIONAL CODE
+    </h2>
+    <p id="spacing">
+      The If statement is the most fundamental decision-making statement, in which the code is executed based on
+      whether it meets the specified condition.<br> It has a code body that only executes if the condition in the if
+      statement is true.<br> The statement can be a single line or a block of code.<br>
+      The if statement in Python has the subsequent syntax:<br><br>
+      <br>
+      <i>
+        if expression<br>
+        Statement<br></i><br>
+
+      <b>Example:</b>
+    <div style="text-align:left; padding-left:35%">
+      num = 11<br>
+      if num > 0:<br>
+      &nbsp &nbsp &nbsp &nbsp print(num, "is a positive number.")<br>
+    </div>
+    <div style="text-align:left; padding-left:35%">
+      <b>Output:<br></b>
+      11 is a positive number<br>
+      </p>
+    </div>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">If Else Statement</h2>
+      <p id="spacing">This statement is used when both the true and false parts of a given condition are specified to
+        be executed.When the condition is true, the statement inside the if block is executed; if the condition is
+        false, the statement outside the if block is executed.<br>
+
+        <b>The if…Else statement in Python has the following syntax:<br></b>
+      <div style="text-align:left; padding-left:30%">
+        <i> if condition :<br>
+          &nbsp &nbsp &nbsp &nbsp #Will executes this block if the condition is true<br>
+          else :<br>
+          &nbsp &nbsp &nbsp &nbsp #Will executes this block if the condition is
+          false<br>
+        </i>
+      </div>
+      <div style="text-align:left; padding-left:30%">
+        <b> Example:<br></b>
+        price = 111<br>
+        if price >= 100:<br>
+        &nbsp &nbsp &nbsp &nbsp print("price is greater than 100")<br>
+        else:<br>
+        &nbsp &nbsp &nbsp &nbsp print("price is less than 100")<br>
+      </div>
+      <b> Output:<br></b>
+      price is greater than 100<br>
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">If…Elif..else Statement</h2>
+      <p id="spacing">In this case, the If condition is evaluated first. If it is false, the Elif statement will be
+        executed; if it also comes false, the Else statement will be executed.<br>
+        <b>The If…Elif..else statement in Python has the subsequent syntax:<br>
+        </b>
+      <div style="text-align:left; padding-left:30%;">
+        <i> if condition :<br>
+          &nbsp &nbsp &nbsp &nbsp Body of if<br>
+          elif condition :<br>
+          &nbsp &nbsp &nbsp &nbsp Body of elif<br>
+          else: <br>
+          &nbsp &nbsp &nbsp &nbsp Body of else<br>
+        </i>
+      </div>
+
+      <div style="text-align:left; padding-left:25%"><b> Example:</b><br>
+        x = 9<br>
+        if x < 9:<br>
+          &nbsp &nbsp &nbsp &nbsp print('x smaller than nine')<br>
+          elif x == 9:<br>
+          &nbsp &nbsp &nbsp &nbsp print('x equal to nine')<br>
+          else:<br>
+          &nbsp &nbsp &nbsp &nbsp print('x is larger than nine')<br>
+      </div>
+      <div style="text-align:left; padding-left:25%">
+        <b>Output:</b><br>
+        x equal to nine<br>
+      </div>
+      </p>
+    </div>
+  </div>
+
+  <div class="slide mySlides">
+    <div class="slide-content">
+      <h2 id="heading_of_logical_opr">LOOPING CONDITIONAL CODE:</h2>
+      <p id="spacing">A conditional loop keeps repeating until a specific condition is met. <br>
+        <b> EXAMPLE:<br>
+        </b>
+      <div style="text-align:left; padding-left:30%;">
+        num=[1,2,3,4,5]<br>
+        for i in num:<br>
+        &nbsp &nbsp &nbsp &nbsp if i % 2 == 0:<br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print(“EVEN NUMBERS:”,i)<br>
+        &nbsp &nbsp &nbsp &nbsp else:<br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print(“ODD NUMBERS:”,i)<br>
+      </div>
+
+      <div style="text-align:left; padding-left:25%"><b>Output:</b><br>
+        ODD NUMBER:1<br>
+        EVEN NUMBER:2<br>
+        ODD NUMBER:3<br>
+        EVEN NUMBER:4<br>
+        ODD NUMBER:5<br>
+      </div>
+      </p>
+    </div>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)">
+
+  </span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <!--span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span> -->
+</div>
+
+
+<script src={% static 'game/js/slides.js' %} async defer></script>
+
+{% endblock %}
